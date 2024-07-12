@@ -4,6 +4,13 @@ A package for importing the various utililies and helpers from the root `platfor
 
 This is necessary because not everyone will store their repos in the same parent directories - otherwise we could just use static paths. This module is just the backend magic to make the scripts work smoothly for everyone regardless of their repo locations, so that we don't need to glob the path every time we need a utility or helper.
 
+## Installation
+
+Via CLI: `pip install "git+https://github.com/jaijalah/test-repo-2.git"`
+
+Via requirements.txt: `pe-utils-importer @ git+https://github.com/jaijalah/test-repo-2.git`
+
+
 ## Usage
 
 1. Import the module into your file.
