@@ -7,7 +7,7 @@ def get_system_path():
 
     return system_path
 
-def get_file(system_path: str, this_is_static_data_functions: bool = False):
+def _get_file(system_path: str, this_is_static_data_functions: bool = False):
     # Get path to repo where the file lives.
     head, sep, tail = system_path.partition(ROOT_REPO)
 
@@ -22,14 +22,14 @@ def get_file(system_path: str, this_is_static_data_functions: bool = False):
 
 def get_constants(system_path: str):
 
-    get_file(system_path)
+    _get_file(system_path)
 
     import Constants
     return Constants
 
 def get_static_data_functions(system_path: str):
 
-    get_file(system_path, True)
+    _get_file(system_path, True)
 
     import static_data_functions
     return static_data_functions
