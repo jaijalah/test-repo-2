@@ -2,6 +2,11 @@ import sys
 
 root_repo = "platform_enablement"
 
+def get_system_path():
+    system_path = sys.path[0]
+
+    return system_path
+
 def get_constants(system_path: str):
     
     # Get path to repo where Constants.py lives.
