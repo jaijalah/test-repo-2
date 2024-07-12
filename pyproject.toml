@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pe-utils-importer"
+authors = [
+    {name = "J J", email = "jai.jalah@krakenflex.com"}
+]
+description = "A package for importing static_data_functions.py and Constants.py and  files in the root pe repo into the working directory."
+url='https://github.com/upside-energy/platform-enablement/pe-utils-importer.git',
+version = "1.0.0"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
