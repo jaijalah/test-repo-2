@@ -13,7 +13,7 @@ Via requirements.txt: `pe-utils-importer @ git+https://github.com/jaijalah/test-
 
 ## Usage
 
-1. Import the module into your file.
+1. Import the module and methods you'll need into your file.
 ```
 from get_pe_utils import get_system_path, get_static_data_functions, get_constants
 ```
