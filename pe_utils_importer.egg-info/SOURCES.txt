@@ -1,9 +1,7 @@
 .DS_Store
 README.md
+import_pe_utils.py
 pyproject.toml
-pe_utils_importer/.DS_Store
-pe_utils_importer/__init__.py
-pe_utils_importer/get_utils.py
 pe_utils_importer.egg-info/PKG-INFO
 pe_utils_importer.egg-info/SOURCES.txt
 pe_utils_importer.egg-info/dependency_links.txt
