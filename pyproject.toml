@@ -7,7 +7,7 @@ name = "pe-utils-importer"
 authors = [
     {name = "J J", email = "jai.jalah@krakenflex.com"}
 ]
-description = "A package for importing static_data_functions.py and Constants.py and  files in the root pe repo into the working directory."
+description = "A package for importing static_data_functions.py and Constants.py files from the platform enablement repo into the working directory."
 version = "1.0.0"
 readme = "README.md"
 requires-python = ">=3.9"

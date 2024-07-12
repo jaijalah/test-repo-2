@@ -4,8 +4,7 @@ root_repo = "platform_enablement"
 
 def get_system_path():
     system_path = sys.path[0]
-
-    return system_path
+    return str(system_path)
 
 def get_constants(system_path: str):
     
