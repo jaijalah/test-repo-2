@@ -1,20 +1,22 @@
 # pe-utils-importer
 
-A package for importing `static_data_functions.py` and `Constants.py` and  files in the root `pe` repo into the working directory.
+A package for importing the various utililies and helpers from the root `platform-enablement` repo into the working directory. 
+
+This is necessary because not everyone will store their repos in the same parent directories - otherwise we could just use static paths. This module is just the backend magic to make the scripts work smoothly for everyone regardless of their repo locations, so that we don't need to glob the path every time we need a utility or helper.
 
 ## Usage
 
 1. Import the module into your file.
 ```
-from pe_utils_import.import_utils import get_static_data_functions, get_constants
+from get_pe_utils import get_system_path, get_static_data_functions, get_constants
 ```
 
-2. Within the same file, get the system path.
+2. Within the same file, get the system path using the module's get_system_path method.
 ```
-system_path = sys.path[0]
+system_path = get_system_path()
 ```
 
-3. Use the `get_static_data_functions` and `get_constants` methods to import the static_data_functions and constants, pass through the system path.
+3. Use one of the methods to import your utilities i.e. `get_static_data_functions` and `get_constants`, make sure to pass through the system path.
 
 ```
 static_data_functions = get_static_data_functions(system_path)
@@ -22,7 +24,7 @@ static_data_functions = get_static_data_functions(system_path)
 constants = get_constants(system_path)
 ```
 
-4. Reference the specific constants you need as such:
+4. If using constants, retrieve the specific constants you need like this:
 ```
 PROD_URL = constants.PROD_URL
 ```
